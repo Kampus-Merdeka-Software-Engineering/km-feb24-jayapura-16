@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+}
+
+nav {
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+  background-color: #333;
+  color: #fff;
+  padding: 0; 
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0; 
+  height: 80px;
+  width: 900px;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #fff; 
+  transition: color 0.3s; 
+}
+
+.nav-item:hover {
+  color: #ff4500;
+}
+
+section {
+  padding: 20px;
+}
+
+img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.revou-image {
+  width: 25px; 
+  height: auto; 
+}
+
+.ssc-image {
+  width: 200px; 
+  height: auto; 
+}
+
+.background-image {
+  width: 300px; 
+  height: auto; 
+}
+
+.problem-image {
+  width: 150px; 
+  height: auto; 
+}
+
+.root-image {
+  width: 250px; 
+  height: auto; 
+}
+
+.business-image {
+  width: 200px; 
+  height: auto; 
+}
+
+.result-image {
+  width: 250px; 
+  height: auto; 
+}
+
+.dashboard-image {
+  width: 400px; 
+  height: auto; 
+}
+
+.team-image {
+  width: 150px; 
+  height: auto; 
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-container {
+  display: block; 
+}
+
+.logo {
+  max-width: 100px; 
+  height: auto; 
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    order: 1;
+  }
+}
