@@ -3,115 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka&display=swap" rel="stylesheet">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Team 16 Jayapura</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <a href="#superstore-analysis" class="nav-item logo-container">
-                <img src="images/logo.png" alt="Superstore Analysis Logo" class="logo">
-            </a>
-            <a href="#background" class="nav-item">BACKGROUND</a>
-            <a href="#objective" class="nav-item">OBJECTIVE</a>
-            <a href="#root-cause" class="nav-item">ROOT CAUSE & HYPOTHESIS</a>
-            <a href="#analysis-result" class="nav-item">ANALYSIS RESULT</a>
-            <a href="#dashboard" class="nav-item">DASHBOARD</a>
-            <a href="#team" class="nav-item">TEAM MEMBER</a>
-        </div>
-    </nav>
-
-    <section>
-        <article>
-            <h2 id="superstore-analysis">SUPERSTORE ANALYSIS <img src="images/revou.png" alt="Image not found" class="revou-image"></h2>
-            <img src="images/superstorecartoon.png" alt="Image not found" class="ssc-image"> <br><br>
-            <h2 id="background">BACKGROUND</h2>
-            <img src="images/profitf.png" alt="Image not found" class="background-image">
-            <p>Perusahaan Superstore mempunyai profit penjualan furniture yang tidak konsisten. Yang dimana pada tahun 2017 terjadi penurunan profit. Maka dari itu perusahaan superstore ingin mencari faktor-faktor yang menyebabkan terjadinya penurunan profit furniture.</p>
-            <p>Perusahaan Superstore berharap jika faktor-faktor penurunan profit berhasil ditemukan, maka profit pada tahun-tahun berikutnya akan meningkat.</p>
-            <br><h2 id="objective">OBJECTIVE</h2>
-            <img src="images/problem.png" alt="Image not found" class="problem-image">
-            <p>Mencari tahu faktor-faktor yang menyebabkan penurunan rata-rata profit furniture di tahun 2017 dan memberikan rekomendasi untuk meningkatkan profit di tahun-tahun berikutnya.</p>
-            <br><h2 id="root-cause">ROOT CAUSE & HYPOTHESIS</h2>
-            <img src="images/root.png" alt="Image not found" class="root-image">
-            <ul>
-                <li>Jika kuantitas furniture yang dijual meningkat, maka profit penjualan furniture yang didapatkan akan meningkat</li>
-                <li>Jika terjadi peningkatan jumlah transaksi, maka profit penjualan furniture akan meningkat</li>
-                <li>Jika kebijakan diskon yang diterapkan dapat lebih bijak, maka profit penjualan furniture akan meningkat</li>
-            </ul>
-            <br>
-            <h2 id="analysis-result">ANALYSIS RESULT</h2>
-            <h1>A. BUSINESS QUESTION</h1>
-            <ol>
-                <li>Secara garis besar apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</li>
-                <br><li>Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per sub segmen? Jika ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</li>
-                <br><li>Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per sub-kategori? Jika ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</li>
-                <br><li>Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per region? Jika ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</li>
-                <br><li>Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per ship mode? Jika ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</li>
-            </ol>
-            <br>
-            <h1>B. ANSWERS</h1>
-            <ol>
-                <li>
-                    <p>Secara garis besar apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
-                    <img src="images/profitf.png" alt="Image not found" class="result-image">
-                    <p>Answer : Sebenarnya penyebabnya masih kurang dapat terlihat, akan tetapi secara garis besar hal yang membuat terjadinya penurunan total profit pada penjualan furniture untuk tahun 2017 adalah karena terjadinya penurunan Average Order Value (AOV) pada tahun 2017. Semuanya akan lebih jelas nanti jika kita membagi dengan lebih rinci.</p>
-                </li><br>
-                <li>
-                    <p>Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per sub segmen? Jika ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
-                    <img src="images/profitf.png" alt="Image not found" class="result-image">
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="Logo" class="logo">
+                    <h1>Superstore Analysis</h1>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <a href="#background" class="nav-item">Background</a>
+                    <a href="#objective" class="nav-item">Objective</a>
+                    <a href="#root-cause" class="nav-item">Root Cause</a>
+                    <a href="#analysis-result" class="nav-item">Analysis Results</a>
+                    <a href="#dashboard" class="nav-item">Dashboard</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="main-content">
+            <article id="background">
+                <h2>Background</h2>
+                <canvas id="chart"></canvas> 
+                <p>Perusahaan Superstore mempunyai profit penjualan furniture yang tidak konsisten. Yang dimana pada tahun 2017 terjadi penurunan profit. Maka dari itu perusahaan superstore ingin mencari faktor-faktor yang menyebabkan terjadinya penurunan profit furniture.</p>
+                <br>
+                <p>Perusahaan Superstore berharap jika faktor-faktor penurunan profit berhasil ditemukan, maka profit pada tahun-tahun berikutnya akan meningkat.</p>
+            </article>
+            <article id="objective">
+                <h2>Objective</h2><br>
+                <img src="images/problem.png" alt="Image not found" class="problem-image center">
+                <p><br>Mencari tahu faktor-faktor yang menyebabkan penurunan rata - rata profit furniture di tahun 2017 dan memberikan rekomendasi untuk menaikan profit di tahun 2018 dan seterusnya.</p>
+            </article>
+            <article id="root-cause">
+                <h2>Root Cause & Hypothesis</h2>
+                <img src="images/root.png" alt="Image not found" class="root-image center">
+                <ul>
+                    <li>Jika kuantitas furniture yang dijual meningkat, maka profit penjualan furniture yang didapatkan akan meningkat.</li>
+                    <br><li>Jika terjadi peningkatan jumlah transaksi, maka profit penjualan furniture akan meningkat.</li>
+                    <br><li>Jika kebijakan diskon yang diterapkan dapat lebih bijak, Maka profit penjualan furniture akan meningkat.</li>
+                </ul>
+            </article>
+            <article id="analysis-result">
+                <h2>Analysis Result</h2><br>
+                <div class="result-item">
+                <h3>A. Business Question & Answers:</h3>
+                    <p>1. Secara garis besar apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?
+                    <canvas id="aovfChart"></canvas>
+                    <p>Answer : Secara garis besar hal yang membuat terjadinya penurunan total profit pada penjualan furniture untuk tahun 2017 adalah karena terjadinya penurunan Average Order Value (AOV) pada tahun 2017. Walaupun datanya masih terlihat kurang jelas, akan tetapi semuanya akan lebih jelas jika kita membagi datanya dengan lebih rinci.</p>
+                    <p><br>2. Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per sub segmen? bila ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
+                    <canvas id="syChart"></canvas><canvas id="aovsChart"></canvas>
                     <p>Answer : Hubungannya ada pada data AOV, yang dimana faktor yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017 adalah karena perusahaan superstore ini terlalu fokus untuk menaikkan total profit dan AOV milik home office pada tahun 2017. Sehingga menyebabkan total profit dan AOV pada segmen lainnya turun.</p>
-                </li><br>
-                <li>
-                    <p>Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per sub-kategori? Jika ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
-                    <img src="images/profitf.png" alt="Image not found" class="result-image">
-                    <p>Answer : Hubungannya ada pada data AOV serta Kebijakan diskon yang masih kurang tepat, yang dimana terjadinya penurunan AOV pada hampir semua sub-kategori membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017. Hal itu didorong dengan terjadinya penurunan total profit dan AOV tables yang mengalami penurunan terbesar, sub-kategori tables ini juga merupakan sub-kategori yang memiliki total profit paling rendah setiap tahunnya dibandingkan dengan sub kategori lainnya. Semua itu dikarenakan rata-rata diskon untuk sub kategori tables yang lebih besar dibandingkan sub-kategori lainnya.</p>
-                </li><br>
-                <li>
-                    <p>Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per region? Jika ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
-                    <img src="images/profitf.png" alt="Image not found" class="result-image">
+                    <p><br>3. Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per sub-kategori? bila ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
+                    <canvas id="scyChart"></canvas>
+                    <p>Answer : Hubungannya ada pada data AOV serta Kebijakan diskon yang masih kurang tepat, yang dimana Terjadinya penurunan AOV pada hampir semua sub-kategori membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017. Hal itu didorong dengan terjadinya penurunan total profit dan AOV tables yang mengalami penurunan terbesar, sub-kategori tables ini juga merupakan sub-kategori yang memiliki total profit paling rendah setiap tahunnya dibandingkan dengan sub kategori lainnya. Semua itu dikarenakan rata-rata diskon untuk sub kategori tables yang lebih besar dibandingkan sub-kategori lainnya.</p>
+                    <p><br>4. Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per region? bila ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
+                    <canvas id="ryChart"></canvas>
                     <p>Answer : Hubungannya ada pada data AOV dan persentase jumlah transaksi yang menggunakan diskon, yang dimana apabila pada tahun tersebut persentase transaksi diskon meningkat dengan diikuti oleh penurunan nilai AOV dari tahun kemarin. Maka akan terjadi penurunan total profit pada tahun tersebut, sedangkan jika persen transaksi diskon menurun dengan diikuti oleh penurunan AOV. Maka total profit masih berkesempatan untuk naik, begitu juga apabila persen transaksi diskon meningkat akan tetapi nilai AOVnya juga meningkat, maka masih ada kesempatan untuk Total profit meningkat pada tahun tersebut. Region south adalah yang paling berpengaruh, hal itu dikarenakan terjadinya perubahan pasar tiba-tiba pada persentase transaksi yang menggunakan diskon yang dimana tiba-tiba persentase tersebut naik secara drastis pada tahun 2017.</p>
-                </li><br>
-                <li>
-                    <p>Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per ship mode? Jika ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
-                    <img src="images/profitf.png" alt="Image not found" class="result-image">
+                    <p><br>5. Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per ship mode? bila ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
+                    <canvas id="smyChart"></canvas>
                     <p>Answer : Hubungannya lagi-lagi ada pada data AOV dan ABS bahkan sampai ke total quantity yang terjual, yang dimana terjadinya penurunan AOV pada beberapa ship mode yang mengalami penurunan total profit yang besar. Hal itu lebih didorong dengan terjadinya penurunan ABS bahkan untuk ship mode yang mengalami penurunan total profit paling banyak yaitu standard class sampai-sampai mengalami penurunan total quantity yang terjual pada tahun tersebut. Padahal pada tahun-tahun sebelumnya standard class merupakan ship mode yang paling banyak memberikan profit, akan tetapi pada tahun 2017 standard class menjadi yang terendah.</p>
-                </li><br>
-            </ol>
-            <br>
-            <h1>C. RECOMENDATION</h1>
-            <ol>
-                <li>
-                    Perusahaan superstore harus mencoba untuk menaikkan AOV dari penjualan furniture dengan harapan dapat meningkatkan total profit penjualan furniture pada tahun selanjutnya.
-                </li>
-                <br><li>
-                    Perusahaan superstore dapat lebih menaikkan AOV dari segmen consumer dan corporate, hal itu dikarenakan pada tahun 2016 segmen-segmen tersebut yang mendominasi pasar. Perusahaan superstore juga dapat menaikkan AOV dari segmen home office dengan catatan tidak boleh terjadi penurunan AOV pada segmen lainnya. Dengan harapan total profit akan meningkat pada tahun berikutnya.
-                </li>
-                <br><li>
-                    Perusahaan superstore dapat meningkatkan AOV dari setiap sub-kategori dan perusahaan superstore dapat mencoba untuk mengganti kebijakan diskon milik sub-kategori tables dengan harapan membuat total profit milik tables menjadi positif pada tahun selanjutnya.
-                </li>
-                <br><li>
-                    Perusahaan superstore dapat mencoba untuk menaikkan AOV serta sedikit mengurangi acara/promosi diskon pada region yang persentase transaksi menggunakan diskonnya naik, sehingga total profit yang kita dapatkan untuk tahun selanjutnya meningkat.
-                </li>
-                <br><li>
-                    Perusahaan superstore harus menaikkan AOV dan mencegah terjadinya penurunan ABS serta mencegah terjadinya penurunan total quantity yang terjual untuk tiap ship mode pada tahun berikutnya.
-                </li>
-            </ol>
-            <br>
-            <h2 id="dashboard">DASHBOARD</h2>
-            <img src="images/ds.png" alt="Image not found" class="dashboard-image">
-            <br>
-            <h2 id="team">Team 16 - Jayapura Member</h2>
-            <img src="images/pp.png" alt="Image not found" class="team-image">
-            <p>Nama1</p>
-        </article>
-    </section>
+                </div>
+            </article>
+            <article id="dashboard">
+                <h2>Dashboard</h2>
+                <img src="images/dashboard.png" alt="Image not found" class="dashboard-image center">
+            </article>
+        </section>
+        <aside>
+            <section id="team">
+                <article>
+                    <h2>Team 16 - Jayapura</h2>
+                    <img src="images/team.png" alt="Image not found" class="team-image center">
+                    <p>Nama1</p>
+                </article>
+            </section>
+            <section id="user-interaction">
+                <article>
+                    <h2>Contact Us</h2> <br>
+                    <form id="contactForm">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </article>
+            </section>
+        </aside>
+    </main>
     <footer>
         <div class="footer-container">
-            <span class="footer-item">© 2024 Team 16 Jayapura</span>
-            <span class="footer-item">Superstore Analysis Dashboard</span>
+            <div class="footer-section footer-description">
+                <h2>Superstore Analysis</h2>
+                <p><br>Superstore Analysis is a website that the Team 16 - Jayapura created to display the results of our analysis of the superstore dataset sample.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Attachment</h3>
+                <ul>
+                    <li><a href="https://docs.google.com/document/d/12eB0UB_lNlpmZDfM8ZNreoBbEFEdJ5jpwYDOEjMTAwM/edit?usp=sharing" class="footer-link">Root Cause Analysis</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1wHlhikjbPX9j4yjkxMqNkX43OcRvkK3c/edit?usp=sharing&ouid=107167572608023602299&rtpof=true&sd=true" class="footer-link">Data Cleaned</a></li>
+                    <li><a href="https://lookerstudio.google.com/reporting/61d0424c-b8f9-4356-9004-8f8a4745b6d0" class="footer-link">Dashboard</a></li>
+                    <li><a href="https://docs.google.com/document/d/1glH3MTNYyhjX_wcCa_YW5fA5LJO1wphvSYI_q_bz1yY/edit?usp=sharing" class="footer-link">Business Question</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1kcoNcoeoFwGvSl2jr5hkEjzDCQd71qR02dZVFfDsRVA/edit?usp=sharing" class="footer-link">Data for Analysis</a></li>
+                </ul>
+            </div>            
         </div>
+        <div class="footer-bottom">
+            <span class="footer-left"><br>© 2024 Team 16 Jayapura</span>
+            <a href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-jayapura-16" target="_blank">
+                <img src="images/logogithub.png" alt="GitHub Logo" class="footer-right">
+            </a>
+        </div>        
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
