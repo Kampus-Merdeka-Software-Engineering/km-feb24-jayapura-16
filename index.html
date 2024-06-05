@@ -40,7 +40,6 @@
             </article>
             <article id="objective">
                 <h2>Objective</h2><br>
-                <img src="images/problem.png" alt="Image not found" class="problem-image center">
                 <p><br>Mencari tahu faktor-faktor yang menyebabkan penurunan rata - rata profit furniture di tahun 2017 dan memberikan rekomendasi untuk menaikan profit di tahun 2018 dan seterusnya.</p>
             </article>
             <article id="root-cause">
@@ -60,23 +59,99 @@
                     <canvas id="aovfChart"></canvas>
                     <p>Answer : Secara garis besar hal yang membuat terjadinya penurunan total profit pada penjualan furniture untuk tahun 2017 adalah karena terjadinya penurunan Average Order Value (AOV) pada tahun 2017. Walaupun datanya masih terlihat kurang jelas, akan tetapi semuanya akan lebih jelas jika kita membagi datanya dengan lebih rinci.</p>
                     <p><br>2. Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per sub segmen? bila ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
-                    <canvas id="syChart"></canvas><canvas id="aovsChart"></canvas>
+                    <div class="chart-container">
+                        <div class="chart-item">
+                            <canvas id="syChart"></canvas>
+                        </div>
+                        <div class="chart-item">
+                            <canvas id="aovsChart"></canvas>
+                        </div>
+                    </div>
                     <p>Answer : Hubungannya ada pada data AOV, yang dimana faktor yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017 adalah karena perusahaan superstore ini terlalu fokus untuk menaikkan total profit dan AOV milik home office pada tahun 2017. Sehingga menyebabkan total profit dan AOV pada segmen lainnya turun.</p>
                     <p><br>3. Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per sub-kategori? bila ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
-                    <canvas id="scyChart"></canvas>
+                    <div class="chart-container">
+                        <div class="chart-item">
+                            <canvas id="sctpChart"></canvas>
+                        </div>
+                        <div class="chart-item">
+                            <canvas id="scadChart"></canvas>
+                        </div>
+                    </div>
+                    <canvas id="scaovChart"></canvas>
                     <p>Answer : Hubungannya ada pada data AOV serta Kebijakan diskon yang masih kurang tepat, yang dimana Terjadinya penurunan AOV pada hampir semua sub-kategori membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017. Hal itu didorong dengan terjadinya penurunan total profit dan AOV tables yang mengalami penurunan terbesar, sub-kategori tables ini juga merupakan sub-kategori yang memiliki total profit paling rendah setiap tahunnya dibandingkan dengan sub kategori lainnya. Semua itu dikarenakan rata-rata diskon untuk sub kategori tables yang lebih besar dibandingkan sub-kategori lainnya.</p>
                     <p><br>4. Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per region? bila ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
-                    <canvas id="ryChart"></canvas>
+                    <div class="chart-container">
+                        <div class="chart-item">
+                            <canvas id="rtpChart"></canvas>
+                        </div>
+                        <div class="chart-item">
+                            <canvas id="rptdChart"></canvas>
+                        </div>
+                    </div>
+                    <canvas id="raovChart"></canvas>
                     <p>Answer : Hubungannya ada pada data AOV dan persentase jumlah transaksi yang menggunakan diskon, yang dimana apabila pada tahun tersebut persentase transaksi diskon meningkat dengan diikuti oleh penurunan nilai AOV dari tahun kemarin. Maka akan terjadi penurunan total profit pada tahun tersebut, sedangkan jika persen transaksi diskon menurun dengan diikuti oleh penurunan AOV. Maka total profit masih berkesempatan untuk naik, begitu juga apabila persen transaksi diskon meningkat akan tetapi nilai AOVnya juga meningkat, maka masih ada kesempatan untuk Total profit meningkat pada tahun tersebut. Region south adalah yang paling berpengaruh, hal itu dikarenakan terjadinya perubahan pasar tiba-tiba pada persentase transaksi yang menggunakan diskon yang dimana tiba-tiba persentase tersebut naik secara drastis pada tahun 2017.</p>
                     <p><br>5. Apakah terjadinya penurunan total profit penjualan furniture pada tahun 2017 berhubungan dengan apa yang terjadi pada penjualan per ship mode? bila ada hubungannya, faktor apa yang membuat terjadinya penurunan total profit penjualan furniture pada tahun 2017?</p>
-                    <canvas id="smyChart"></canvas>
+                    <div class="chart-container">
+                        <div class="chart-item">
+                            <canvas id="smtpChart"></canvas>
+                        </div>
+                        <div class="chart-item">
+                            <canvas id="smtqChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-item">
+                            <canvas id="smabsChart"></canvas>
+                        </div>
+                        <div class="chart-item">
+                            <canvas id="smaovChart"></canvas>
+                        </div>
+                    </div>
                     <p>Answer : Hubungannya lagi-lagi ada pada data AOV dan ABS bahkan sampai ke total quantity yang terjual, yang dimana terjadinya penurunan AOV pada beberapa ship mode yang mengalami penurunan total profit yang besar. Hal itu lebih didorong dengan terjadinya penurunan ABS bahkan untuk ship mode yang mengalami penurunan total profit paling banyak yaitu standard class sampai-sampai mengalami penurunan total quantity yang terjual pada tahun tersebut. Padahal pada tahun-tahun sebelumnya standard class merupakan ship mode yang paling banyak memberikan profit, akan tetapi pada tahun 2017 standard class menjadi yang terendah.</p>
                 </div>
             </article>
             <article id="dashboard">
                 <h2>Dashboard</h2>
-                <img src="images/dashboard.png" alt="Image not found" class="dashboard-image center">
-            </article>
+                <div class="chart-container">
+                    <div class="chart-item">
+                        <canvas id="pfqtptsChart"></canvas>
+                    </div>
+                    <div class="chart-item">
+                        <canvas id="pfqtttcChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-item">
+                        <canvas id="scq2017Chart"></canvas>
+                    </div>
+                    <div class="chart-item">
+                        <canvas id="sq2017Chart"></canvas>
+                    </div>
+                </div>
+                <div id="performanceTableContainer">
+                <table id="performanceTable" class="display">
+                    <caption>Data Category Furniture In 2017</caption>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Order Date</th>
+                            <th>Ship Date</th>
+                            <th>Ship Mode</th>
+                            <th>Customer ID</th>
+                            <th>Segment</th>
+                            <th>Region</th>
+                            <th>Sub-Category</th>
+                            <th>Sales</th>
+                            <th>Quantity</th>
+                            <th>Discount</th>
+                            <th>Profit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                </div>
+            </article>            
         </section>
         <aside>
             <section id="team">
@@ -124,6 +199,8 @@
             </a>
         </div>        
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
