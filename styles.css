@@ -4,48 +4,80 @@
   box-sizing: border-box;
 }
 
-#chart {
+.chart-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5px;
+}
+
+.chart-item {
   width: 100%;
-  max-width: 350px;
+  max-width: 100%;
   height: auto;
-  max-height: 200px;
 }
 
-#aovfChart {
-  width: 100%;
-  max-width: 350px; 
-  height: 200px;   
+.dataTables_paginate .paginate_button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-#syChart {
-  width: 100%;
-  max-width: 350px; 
-  max-height: 300px;   
+.dataTables_paginate .paginate_button:hover {
+  background-color: #555;
 }
 
-#aovsChart {
-  width: 100%;
-  max-width: 350px; 
-  height: 200px;   
+.dataTables_info {
+  margin-top: 5px;
+  text-align: right;
 }
 
-#scyChart {
+#performanceTableContainer {
   width: 100%;
-  max-width: 350px;
-  height: 200px;    
+  max-width: 930px;
+  height: auto;
+  overflow-x: auto;
+  border: 2px solid #000000;
 }
 
-#ryChart {
+#performanceTable {
   width: 100%;
-  max-width: 350px; 
-  height: 200px;    
+  border-collapse: collapse;
 }
 
-#smyChart {
-  width: 100%;
-  max-width: 350px; 
-  height: 200px;    
+#performanceTable caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
+
+#performanceTable th,
+#performanceTable td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#performanceTable th {
+  background-color: #333;
+  color: #fff;
+}
+
+#performanceTable tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+#performanceTable tbody tr:hover {
+  background-color: #ddd;
+}
+
+#performanceTableContainer table {
+  width: 100%;
+}
+
 body {
   font-family: 'Fredoka', sans-serif;
 }
@@ -278,14 +310,59 @@ form button:hover {
     justify-content: space-between;
     border-bottom: 3px solid #fff;
   }
-}
 
-@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
   main {
     grid-template-columns: 1fr;
   }
 
+  aside {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+  
   .nav-container {
     justify-content: space-between;
+  }
+  
+  .result-item {
+    font-size: 14px;
+  }
+  
+  #main-content {
+    width: 100%;
+  }
+  
+  #main-content article {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  #main-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #main-content .result-item {
+    font-size: 14px;
+  }
+  
+  #main-content table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  #main-content th,
+  #main-content td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
   }
 }
