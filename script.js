@@ -1,8 +1,25 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
-    alert(`Terimakasih ${username}, Kami akan mencoba untuk membalas pesanmu melalui email ${email}.`);
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var username = document.getElementById('loginUsername').value;
+        var password = document.getElementById('loginPassword').value;
+
+        if (username === 'admin' && password === 'admin') {
+            document.getElementById('loginFormContainer').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        } else {
+            alert('Username atau password salah!');
+        }
+    });
+
+    document.getElementById('hamburger').addEventListener('click', function() {
+        var navLinks = document.getElementById('nav-links');
+        if (navLinks.style.display === 'block') {
+            navLinks.style.display = 'none';
+        } else {
+            navLinks.style.display = 'block';
+        }
+    });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
