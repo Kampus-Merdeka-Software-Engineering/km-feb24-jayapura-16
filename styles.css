@@ -4,6 +4,39 @@
   box-sizing: border-box;
 }
 
+#quartersChecklist label {
+  display: block;
+}
+
+#main-content {
+  flex: 1; 
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  flex: 0.5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  max-width: 400px;
+}
+
+aside img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+}
+
+.chart-item p {
+  text-align: center;
+}
+
 .chart-container {
   display: grid;
   grid-template-columns: repeat(2);
@@ -52,7 +85,8 @@
 
 .dataTables_info {
   margin-top: 5px;
-  text-align: right;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 #performanceTableContainer {
@@ -61,6 +95,7 @@
   height: auto;
   overflow-x: auto;
   border: 2px solid #000000;
+  padding: 10px;
 }
 
 #performanceTable {
@@ -99,8 +134,12 @@
 }
 
 body {
-  background-color: #808080;
   margin: 0; 
+  background-image: url('images/superstore.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  background-attachment: fixed;
   font-family: Arial, sans-serif;
   color: rgb(0, 0, 0);
 }
@@ -176,6 +215,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: 1px solid #fff;
+  text-align: center;
 }
 
 .nav-item {
@@ -184,6 +224,8 @@ nav {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .nav-item:hover {
@@ -195,14 +237,15 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 1px;
   padding: 1px;
+  margin-top: 30px;
 }
 
 article {
   background-color: #f9f9f9;
-  padding: 2px;
+  padding: 10px;
   border-radius: 1px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2px;
+  margin-bottom: 20px;
 }
 
 img {
@@ -218,18 +261,18 @@ img {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 1rem; /* Mengubah tinggi footer */
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-top: none; /* Menghapus garis pada footer */
 }
 
 .footer-bottom {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding-top: 0.5rem;
+  align-items: center;
+  border-top: 1px solid #ffffff;
 }
 
 .footer-left {
@@ -240,8 +283,28 @@ footer {
   width: 28px;
   height: auto;
   margin-left: auto;
-  display: block;
-  margin-top: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.attachments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .footer-link:hover {
+  color: #ff4500;
+  text-decoration: none;
 }
 
 form {
@@ -352,6 +415,49 @@ form button:hover {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-container:before {
+    content: '';
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: white;
+  }
+
+  .nav-container .hamburger.active:before {
+    display: block;
+  }
+
+  .nav-container .hamburger.active ~ .nav-links:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% + 30px);
+    width: 1px;
+    height: 100%;
+    background-color: white;
+  }
+
+  .logo-container {
+    margin-right: auto;
+  }
+
   main {
     grid-template-columns: 1fr;
     padding: 0;
@@ -441,11 +547,11 @@ form button:hover {
   .nav-container:before {
     content: '';
     position: absolute;
-    top: 100%; /* Menggeser garis ke bawah navbar */
+    top: 100%; 
     left: 0;
     width: 100%;
-    height: 2px; /* Tinggi garis */
-    background-color: white; /* Warna garis */
+    height: 2px; 
+    background-color: white;
   }
 
   .nav-container .hamburger.active:before {
@@ -467,4 +573,50 @@ form button:hover {
   }
 }
 
+#loginFormContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 1000;
+}
 
+#loginFormContainer h2 {
+  text-align: center;
+}
+
+#loginFormContainer input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+#loginFormContainer button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#loginFormContainer button:hover {
+  background-color: #45a049;
+}
+
+#mainContent {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 5px;
+    font-size: 9px; 
+  }
+}
